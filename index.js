@@ -29,23 +29,32 @@
 // Date: March 2 2021
 // Solve Time: 6 minutes
 
-function countPosSumNeg(array) {
-    let returnArr = []
-    let positive = 0;
-    let sum = 0;
-    array.forEach(number => {
-        if(number > 0 ) {
-            positive ++
-        } else {
-            sum += number;
-        }
-    });
+// function countPosSumNeg(array) {
+//     let returnArr = []
+//     let positive = 0;
+//     let sum = 0;
+//     array.forEach(number => {
+//         if(number > 0 ) {
+//             positive ++
+//         } else {
+//             sum += number;
+//         }
+//     });
 
-    returnArr.push(positive, sum);
-    console.log(returnArr)
-}
+//     returnArr.push(positive, sum);
+//     console.log(returnArr)
+// }
 
-countPosSumNeg([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]);
-countPosSumNeg([92, 6, 73, -77, 81, -90, 99, 8, -85, 34]);
-countPosSumNeg([91, -4, 80, -73, -28]);
-countPosSumNeg([]);
+// countPosSumNeg([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]);
+// countPosSumNeg([92, 6, 73, -77, 81, -90, 99, 8, -85, 34]);
+// countPosSumNeg([91, -4, 80, -73, -28]);
+// countPosSumNeg([]);
+
+
+
+
+// Reverse the Number
+// Create a function that takes an integer n and reverses it. If the number is negative, treat it like it's positive.
+// Difficulty: Medium
+// Date: March 3 2021
+// Solve Time: 
