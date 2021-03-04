@@ -57,4 +57,23 @@
 // Create a function that takes an integer n and reverses it. If the number is negative, treat it like it's positive.
 // Difficulty: Medium
 // Date: March 3 2021
-// Solve Time: 
+// Solve Time: 6 minutes
+
+function rev(num) {
+    if(num < 0) {
+        num = num * -1;
+    }
+    var numString = num.toString();
+    var arr = numString.split("");
+    var returnArr = []
+    for (let i = arr.length; i >= 0; i--) {
+        const number = arr[i];
+        returnArr.push(number)
+    }
+    console.log(returnArr.join(""))
+};
+
+
+rev(5121);
+rev(69);
+rev(-122157);
