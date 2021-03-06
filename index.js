@@ -94,43 +94,50 @@
 // Date: March 4 2021
 // Solve Time: 16 minutes
 
-function calculateScore(array) {
-    var abigail = 0;
-    var benson = 0;
+// function calculateScore(array) {
+//     var abigail = 0;
+//     var benson = 0;
 
-    function sortGame(arr) {
-        if(arr[0] === arr[1]) {
-            return "tie";
-        } else if(arr[0] === "R" && arr[1] === "S" ||
-        arr[0] === "P" && arr[1] === "R" ||
-        arr[0] === "S" && arr[1] === "P") {
-            abigail++;
-        } else {
-            benson++;
-        }
-    }
+//     function sortGame(arr) {
+//         if(arr[0] === arr[1]) {
+//             return "tie";
+//         } else if(arr[0] === "R" && arr[1] === "S" ||
+//         arr[0] === "P" && arr[1] === "R" ||
+//         arr[0] === "S" && arr[1] === "P") {
+//             abigail++;
+//         } else {
+//             benson++;
+//         }
+//     }
 
-    for (let i = 0; i < array.length; i++) {
-        const game = array[i];
-        sortGame(game)
-    }
+//     for (let i = 0; i < array.length; i++) {
+//         const game = array[i];
+//         sortGame(game)
+//     }
 
-    if(abigail === benson) {
-        console.log("Tie")
-    } else if(abigail > benson) {
-        console.log("Abigail")
-    } else {
-        console.log("Benson")
-    }
-}
+//     if(abigail === benson) {
+//         console.log("Tie")
+//     } else if(abigail > benson) {
+//         console.log("Abigail")
+//     } else {
+//         console.log("Benson")
+//     }
+// }
 
-calculateScore([["R", "P"], ["R", "S"], ["S", "P"]]);
+// calculateScore([["R", "P"], ["R", "S"], ["S", "P"]]);
 
-// Benson wins the first game (Paper beats Rock).
-// Abigail wins the second game (Rock beats Scissors).
-// Abigail wins the third game (Scissors beats Paper). 
-// Abigail wins 2/3.
+// // Benson wins the first game (Paper beats Rock).
+// // Abigail wins the second game (Rock beats Scissors).
+// // Abigail wins the third game (Scissors beats Paper). 
+// // Abigail wins 2/3.
 
-calculateScore([["R", "R"], ["S", "S"]]);
+// calculateScore([["R", "R"], ["S", "S"]]);
 
-calculateScore([["S", "R"], ["R", "S"], ["R", "R"]]);
+// calculateScore([["S", "R"], ["R", "S"], ["R", "R"]]);
+
+
+// Safecracker
+// Traditional safes use a three-wheel locking mechanism, with the safe combination entered using a dial on the door of the safe. The dial is marked with clockwise increments between 0 and 99. The three-number combination is entered by first dialling to the right (clockwise), then to the left (anti-clockwise), and then to the right (clockwise) again. Combination numbers are read from the top of the dial:
+// Difficulty: Hard
+// Date: March 5 2021
+// Solve Time: 
