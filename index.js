@@ -140,4 +140,40 @@
 // Traditional safes use a three-wheel locking mechanism, with the safe combination entered using a dial on the door of the safe. The dial is marked with clockwise increments between 0 and 99. The three-number combination is entered by first dialling to the right (clockwise), then to the left (anti-clockwise), and then to the right (clockwise) again. Combination numbers are read from the top of the dial:
 // Difficulty: Hard
 // Date: March 5 2021
-// Solve Time: 
+// Solve Time: 13 minutes
+
+
+function safecracker(start, movements) {
+    var count;
+    var returnArr = []
+    if(start === 0) {
+        count = 100;
+    } else {
+        count = start;
+    }
+    var num1 = count - movements[0];
+    count -= movements[0];
+    returnArr.push(num1);
+    var num2 = count + movements[1];
+    count += movements[1];
+    returnArr.push(num2);
+    var num3 = count -= movements[2];
+    returnArr.push(num3);
+
+    var newArr = returnArr.map(number => {
+        if(number > 100) {
+            return number - 100;
+        } else if (number < 0) {
+            return number + 100;
+        }else {
+            return number;
+        }
+    });
+
+    console.log(newArr)
+}
+
+safecracker(0, [3, 10, 5]);
+safecracker(96, [54, 48, 77]);
+safecracker(43, [51, 38, 46]);
+safecracker(4, [69, 88, 55]);
