@@ -143,37 +143,37 @@
 // Solve Time: 13 minutes
 
 
-function safecracker(start, movements) {
-    var count;
-    var returnArr = []
-    if(start === 0) {
-        count = 100;
-    } else {
-        count = start;
-    }
-    var num1 = count - movements[0];
-    count -= movements[0];
-    returnArr.push(num1);
-    var num2 = count + movements[1];
-    count += movements[1];
-    returnArr.push(num2);
-    var num3 = count -= movements[2];
-    returnArr.push(num3);
+// function safecracker(start, movements) {
+//     var count;
+//     var returnArr = []
+//     if(start === 0) {
+//         count = 100;
+//     } else {
+//         count = start;
+//     }
+//     var num1 = count - movements[0];
+//     count -= movements[0];
+//     returnArr.push(num1);
+//     var num2 = count + movements[1];
+//     count += movements[1];
+//     returnArr.push(num2);
+//     var num3 = count -= movements[2];
+//     returnArr.push(num3);
 
-    var newArr = returnArr.map(number => {
-        if(number > 100) {
-            return number - 100;
-        } else if (number < 0) {
-            return number + 100;
-        }else {
-            return number;
-        }
-    });
+//     var newArr = returnArr.map(number => {
+//         if(number > 100) {
+//             return number - 100;
+//         } else if (number < 0) {
+//             return number + 100;
+//         }else {
+//             return number;
+//         }
+//     });
 
-    console.log(newArr)
-}
+//     console.log(newArr)
+// }
 
-safecracker(0, [3, 10, 5]);
-safecracker(96, [54, 48, 77]);
-safecracker(43, [51, 38, 46]);
-safecracker(4, [69, 88, 55]);
+// safecracker(0, [3, 10, 5]);
+// safecracker(96, [54, 48, 77]);
+// safecracker(43, [51, 38, 46]);
+// safecracker(4, [69, 88, 55]);
