@@ -92,4 +92,45 @@
 // S stands for Scissors
 // Difficulty: Hard
 // Date: March 4 2021
-// Solve Time: 
+// Solve Time: 16 minutes
+
+function calculateScore(array) {
+    var abigail = 0;
+    var benson = 0;
+
+    function sortGame(arr) {
+        if(arr[0] === arr[1]) {
+            return "tie";
+        } else if(arr[0] === "R" && arr[1] === "S" ||
+        arr[0] === "P" && arr[1] === "R" ||
+        arr[0] === "S" && arr[1] === "P") {
+            abigail++;
+        } else {
+            benson++;
+        }
+    }
+
+    for (let i = 0; i < array.length; i++) {
+        const game = array[i];
+        sortGame(game)
+    }
+
+    if(abigail === benson) {
+        console.log("Tie")
+    } else if(abigail > benson) {
+        console.log("Abigail")
+    } else {
+        console.log("Benson")
+    }
+}
+
+calculateScore([["R", "P"], ["R", "S"], ["S", "P"]]);
+
+// Benson wins the first game (Paper beats Rock).
+// Abigail wins the second game (Rock beats Scissors).
+// Abigail wins the third game (Scissors beats Paper). 
+// Abigail wins 2/3.
+
+calculateScore([["R", "R"], ["S", "S"]]);
+
+calculateScore([["S", "R"], ["R", "S"], ["R", "R"]]);
