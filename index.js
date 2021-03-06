@@ -59,21 +59,37 @@
 // Date: March 3 2021
 // Solve Time: 6 minutes
 
-function rev(num) {
-    if(num < 0) {
-        num = num * -1;
-    }
-    var numString = num.toString();
-    var arr = numString.split("");
-    var returnArr = []
-    for (let i = arr.length; i >= 0; i--) {
-        const number = arr[i];
-        returnArr.push(number)
-    }
-    console.log(returnArr.join(""))
-};
+// function rev(num) {
+//     if(num < 0) {
+//         num = num * -1;
+//     }
+//     var numString = num.toString();
+//     var arr = numString.split("");
+//     var returnArr = []
+//     for (let i = arr.length; i >= 0; i--) {
+//         const number = arr[i];
+//         returnArr.push(number)
+//     }
+//     console.log(returnArr.join(""))
+// };
 
 
-rev(5121);
-rev(69);
-rev(-122157);
+// rev(5121);
+// rev(69);
+// rev(-122157);
+
+
+
+// Rock Paper Scissors
+// Abigail and Benson are playing Rock, Paper, Scissors.
+
+// Each game is represented by an array of length 2, where the first element represents what Abigail played and the second element represents what Benson played.
+
+// Given a sequence of games, determine who wins the most number of matches. If they tie, output "Tie".
+
+// R stands for Rock
+// P stands for Paper
+// S stands for Scissors
+// Difficulty: Hard
+// Date: March 4 2021
+// Solve Time: 
