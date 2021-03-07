@@ -184,4 +184,27 @@
 // Create a function that takes a string and returns the sum of vowels, where some vowels are considered numbers.
 // Difficulty: Hard
 // Date: March 6 2021
-// Solve Time: 
+// Solve Time: 8 minutes
+
+function sumOfVowels(string) {
+    var score = 0;
+    string = string.toLowerCase();
+    var array = string.split("");
+    for (let i = 0; i < array.length; i++) {
+        const letter = array[i];
+        if(letter == "a") {
+            score += 4;
+        } else if(letter == "e") {
+            score += 3;
+        } else if(letter == "i") {
+            score += 1;
+        }
+    }
+    console.log(score)
+}
+
+sumOfVowels("Let\'s test this function.");
+
+sumOfVowels("Do I get the correct output?");
+
+sumOfVowels("I love edabit!");
