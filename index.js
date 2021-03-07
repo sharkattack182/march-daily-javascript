@@ -177,3 +177,11 @@
 // safecracker(96, [54, 48, 77]);
 // safecracker(43, [51, 38, 46]);
 // safecracker(4, [69, 88, 55]);
+
+
+
+// Sum of Vowels
+// Create a function that takes a string and returns the sum of vowels, where some vowels are considered numbers.
+// Difficulty: Hard
+// Date: March 6 2021
+// Solve Time: 
