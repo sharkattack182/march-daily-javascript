@@ -186,25 +186,34 @@
 // Date: March 6 2021
 // Solve Time: 8 minutes
 
-function sumOfVowels(string) {
-    var score = 0;
-    string = string.toLowerCase();
-    var array = string.split("");
-    for (let i = 0; i < array.length; i++) {
-        const letter = array[i];
-        if(letter == "a") {
-            score += 4;
-        } else if(letter == "e") {
-            score += 3;
-        } else if(letter == "i") {
-            score += 1;
-        }
-    }
-    console.log(score)
-}
+// function sumOfVowels(string) {
+//     var score = 0;
+//     string = string.toLowerCase();
+//     var array = string.split("");
+//     for (let i = 0; i < array.length; i++) {
+//         const letter = array[i];
+//         if(letter == "a") {
+//             score += 4;
+//         } else if(letter == "e") {
+//             score += 3;
+//         } else if(letter == "i") {
+//             score += 1;
+//         }
+//     }
+//     console.log(score)
+// }
 
-sumOfVowels("Let\'s test this function.");
+// sumOfVowels("Let\'s test this function.");
 
-sumOfVowels("Do I get the correct output?");
+// sumOfVowels("Do I get the correct output?");
 
-sumOfVowels("I love edabit!");
+// sumOfVowels("I love edabit!");
+
+
+
+
+// Oddly or Evenly Positioned
+// Create a function that returns the characters from an array or string r on odd or even positions, depending on the specifier s. The specifier will be "odd" for items on odd positions (1, 3, 5, ...) and "even" for items on even positions (2, 4, 6, ...).
+// Difficulty: Hard
+// Date: March 7 2021
+// Solve Time: 
