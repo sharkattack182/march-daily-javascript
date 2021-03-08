@@ -263,4 +263,22 @@
 // Create a function which takes every letter in every word, and puts it in alphabetical order. Note how the original word lengths must stay the same.
 // Difficulty: Hard
 // Date: March 8 2021
-// Solve Time: 
+// Solve Time: 9 minutes
+
+function trueAlphabetic(string) {
+    var returnArr = []
+    var sentence = string.split(" ");
+    for(const word of sentence) {
+        var toOrder = word.split("");
+        var alph = toOrder.sort();
+        var sorted = alph.join("");
+        returnArr.push(sorted)
+    }
+
+    console.log(returnArr.join(" "))
+}
+
+
+trueAlphabetic("hello world");
+trueAlphabetic("edabit is awesome");
+trueAlphabetic("have a nice day");
