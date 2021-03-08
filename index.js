@@ -218,40 +218,49 @@
 // Date: March 7 2021
 // Solve Time: 13 minutes
 
-function charAtPos(input, specifier) {
-    var returnString ="";
-    var returnArr = [];
-    if(typeof input === "string") {
-        var spec = 0;
-        var arr = input.split("");
-        if(specifier == "even") {
-            spec = 1;
-        } else {
-            spec = 0;
-        }
+// function charAtPos(input, specifier) {
+//     var returnString ="";
+//     var returnArr = [];
+//     if(typeof input === "string") {
+//         var spec = 0;
+//         var arr = input.split("");
+//         if(specifier == "even") {
+//             spec = 1;
+//         } else {
+//             spec = 0;
+//         }
 
-        for (let i = spec; i < arr.length; i+=2) {
-            const element = arr[i];
-            returnString += element;
-        }
+//         for (let i = spec; i < arr.length; i+=2) {
+//             const element = arr[i];
+//             returnString += element;
+//         }
 
-        console.log(returnString)
-    } else {
-        var spec = 0;
-        if(specifier == "even") {
-            spec = 1;
-        } else {
-            spec = 0;
-        }
+//         console.log(returnString)
+//     } else {
+//         var spec = 0;
+//         if(specifier == "even") {
+//             spec = 1;
+//         } else {
+//             spec = 0;
+//         }
 
-        for (let i = spec; i < input.length; i+=2) {
-            const element = input[i];
-            returnArr.push(element);
-        }
-        console.log(returnArr)
-    }
-}
+//         for (let i = spec; i < input.length; i+=2) {
+//             const element = input[i];
+//             returnArr.push(element);
+//         }
+//         console.log(returnArr)
+//     }
+// }
 
-charAtPos([2, 4, 6, 8, 10], "even");
-charAtPos("EDABIT", "odd");
-charAtPos(["A", "R", "B", "I", "T", "R", "A", "R", "I", "L", "Y"], "odd");
+// charAtPos([2, 4, 6, 8, 10], "even");
+// charAtPos("EDABIT", "odd");
+// charAtPos(["A", "R", "B", "I", "T", "R", "A", "R", "I", "L", "Y"], "odd");
+
+
+
+
+// True Alphabetical Order
+// Create a function which takes every letter in every word, and puts it in alphabetical order. Note how the original word lengths must stay the same.
+// Difficulty: Hard
+// Date: March 8 2021
+// Solve Time: 
