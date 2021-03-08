@@ -216,4 +216,42 @@
 // Create a function that returns the characters from an array or string r on odd or even positions, depending on the specifier s. The specifier will be "odd" for items on odd positions (1, 3, 5, ...) and "even" for items on even positions (2, 4, 6, ...).
 // Difficulty: Hard
 // Date: March 7 2021
-// Solve Time: 
+// Solve Time: 13 minutes
+
+function charAtPos(input, specifier) {
+    var returnString ="";
+    var returnArr = [];
+    if(typeof input === "string") {
+        var spec = 0;
+        var arr = input.split("");
+        if(specifier == "even") {
+            spec = 1;
+        } else {
+            spec = 0;
+        }
+
+        for (let i = spec; i < arr.length; i+=2) {
+            const element = arr[i];
+            returnString += element;
+        }
+
+        console.log(returnString)
+    } else {
+        var spec = 0;
+        if(specifier == "even") {
+            spec = 1;
+        } else {
+            spec = 0;
+        }
+
+        for (let i = spec; i < input.length; i+=2) {
+            const element = input[i];
+            returnArr.push(element);
+        }
+        console.log(returnArr)
+    }
+}
+
+charAtPos([2, 4, 6, 8, 10], "even");
+charAtPos("EDABIT", "odd");
+charAtPos(["A", "R", "B", "I", "T", "R", "A", "R", "I", "L", "Y"], "odd");
