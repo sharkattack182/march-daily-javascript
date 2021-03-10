@@ -288,4 +288,25 @@
 // Create a function that takes in a sentence and returns the average length of each word in that sentence. Round your result to two decimal places.
 // Difficulty: Hard
 // Date: March 9 2021
-// Solve Time: 
+// Solve Time: 10 minutes
+
+function averageWordLength(string) {
+    var newArr = [];
+    var total = 0;
+
+    var array = string.split(" ");
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        var clean = element.replace(/[^a-zA-Z ]/g, "");
+        total += clean.length;
+    }
+
+    var average = total / array.length;
+    console.log(average.toFixed(2));
+}
+
+
+
+averageWordLength("A B C.");
+averageWordLength("What a gorgeous day.");
+averageWordLength("Dude, this is so awesome!");
