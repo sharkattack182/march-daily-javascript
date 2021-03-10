@@ -265,20 +265,27 @@
 // Date: March 8 2021
 // Solve Time: 9 minutes
 
-function trueAlphabetic(string) {
-    var returnArr = []
-    var sentence = string.split(" ");
-    for(const word of sentence) {
-        var toOrder = word.split("");
-        var alph = toOrder.sort();
-        var sorted = alph.join("");
-        returnArr.push(sorted)
-    }
+// function trueAlphabetic(string) {
+//     var returnArr = []
+//     var sentence = string.split(" ");
+//     for(const word of sentence) {
+//         var toOrder = word.split("");
+//         var alph = toOrder.sort();
+//         var sorted = alph.join("");
+//         returnArr.push(sorted)
+//     }
 
-    console.log(returnArr.join(" "))
-}
+//     console.log(returnArr.join(" "))
+// }
 
 
-trueAlphabetic("hello world");
-trueAlphabetic("edabit is awesome");
-trueAlphabetic("have a nice day");
+// trueAlphabetic("hello world");
+// trueAlphabetic("edabit is awesome");
+// trueAlphabetic("have a nice day");
+
+
+// Average Word Lrngth
+// Create a function that takes in a sentence and returns the average length of each word in that sentence. Round your result to two decimal places.
+// Difficulty: Hard
+// Date: March 9 2021
+// Solve Time: 
