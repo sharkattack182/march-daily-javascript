@@ -290,23 +290,31 @@
 // Date: March 9 2021
 // Solve Time: 10 minutes
 
-function averageWordLength(string) {
-    var newArr = [];
-    var total = 0;
+// function averageWordLength(string) {
+//     var newArr = [];
+//     var total = 0;
 
-    var array = string.split(" ");
-    for (let i = 0; i < array.length; i++) {
-        const element = array[i];
-        var clean = element.replace(/[^a-zA-Z ]/g, "");
-        total += clean.length;
-    }
+//     var array = string.split(" ");
+//     for (let i = 0; i < array.length; i++) {
+//         const element = array[i];
+//         var clean = element.replace(/[^a-zA-Z ]/g, "");
+//         total += clean.length;
+//     }
 
-    var average = total / array.length;
-    console.log(average.toFixed(2));
-}
+//     var average = total / array.length;
+//     console.log(average.toFixed(2));
+// }
 
 
 
-averageWordLength("A B C.");
-averageWordLength("What a gorgeous day.");
-averageWordLength("Dude, this is so awesome!");
+// averageWordLength("A B C.");
+// averageWordLength("What a gorgeous day.");
+// averageWordLength("Dude, this is so awesome!");
+
+
+
+// Find My Glasses
+// Please help me out by showing me the index in the list which contains my glasses. They look like two capital Os, with any number of dashes in between!
+// Difficulty: Hard
+// Date: March 10 2021
+// Solve Time: 
