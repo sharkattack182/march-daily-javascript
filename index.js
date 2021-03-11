@@ -318,3 +318,13 @@
 // Difficulty: Hard
 // Date: March 10 2021
 // Solve Time: 
+
+function findGlasses(arr) {
+	for (let i=0; i < arr.length; i++) {
+		if (/O(-)+O/g.test(arr[i])) console.log(i);
+	}
+}
+
+findGlasses(["phone", "O-O", "coins", "keys"]);
+findGlasses(["OO", "wallet", "O##O", "O----O"]);
+ findGlasses(["O--#--O", "dustO---Odust", "more dust"]);
