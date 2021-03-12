@@ -319,12 +319,20 @@
 // Date: March 10 2021
 // Solve Time: 
 
-function findGlasses(arr) {
-	for (let i=0; i < arr.length; i++) {
-		if (/O(-)+O/g.test(arr[i])) console.log(i);
-	}
-}
+// function findGlasses(arr) {
+// 	for (let i=0; i < arr.length; i++) {
+// 		if (/O(-)+O/g.test(arr[i])) console.log(i);
+// 	}
+// }
 
-findGlasses(["phone", "O-O", "coins", "keys"]);
-findGlasses(["OO", "wallet", "O##O", "O----O"]);
- findGlasses(["O--#--O", "dustO---Odust", "more dust"]);
+// findGlasses(["phone", "O-O", "coins", "keys"]);
+// findGlasses(["OO", "wallet", "O##O", "O----O"]);
+//  findGlasses(["O--#--O", "dustO---Odust", "more dust"]);
+
+
+
+// Reorder Digits
+// Create a function that reorders the digits of each numerical element in an array based on ascending (asc) or descending (desc) order.
+// Difficulty: Hard
+// Date: March 11 2021
+// Solve Time: 
