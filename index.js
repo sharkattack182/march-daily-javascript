@@ -335,7 +335,7 @@
 // Create a function that reorders the digits of each numerical element in an array based on ascending (asc) or descending (desc) order.
 // Difficulty: Hard
 // Date: March 11 2021
-// Solve Time: 
+// Solve Time: 11 minutes
 
 function reorderDigits(array, order) {
     var returnArr = []
