@@ -336,3 +336,30 @@
 // Difficulty: Hard
 // Date: March 11 2021
 // Solve Time: 
+
+function reorderDigits(array, order) {
+    var returnArr = []
+    array.forEach(number => {
+        var numString = number.toString();
+        var numArr = numString.split("");
+        if(order === "asc") {
+            var sorted = numArr.sort(function(a, b){return a-b});
+            var returnString = sorted.join("");
+            returnArr.push(returnString)
+        } else {
+            var sorted = numArr.sort(function(a, b){return b-a});
+            var returnString = sorted.join("");
+            returnArr.push(returnString)
+        }
+    });
+
+    console.log(returnArr)
+}
+
+
+reorderDigits([515, 341, 98, 44, 211], "asc");
+reorderDigits([515, 341, 98, 44, 211], "desc");
+reorderDigits([63251, 78221], "asc");
+reorderDigits([63251, 78221], "desc");
+reorderDigits([1, 2, 3, 4], "asc");
+reorderDigits([1, 2, 3, 4], "desc");
