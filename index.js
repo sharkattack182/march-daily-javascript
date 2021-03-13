@@ -369,4 +369,22 @@
 // Write a function that returns the least common multiple (LCM) of two integers.
 // Difficulty: Hard
 // Date: March 12 2021
-// Solve Time: 11 minutes
+// Solve Time: 12 minutes
+
+function lcm(num1, num2) {
+
+    let lar = Math.max(num1, num2);
+    let small = Math.min(num1, num2);
+
+    let i = lar;
+    while(i % small !== 0){
+      i += lar;
+    }
+    
+    console.log(i)
+}
+
+
+lcm(9, 18);
+lcm(8, 5);
+lcm(17, 11);
