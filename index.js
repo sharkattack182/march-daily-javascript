@@ -398,16 +398,24 @@
 // Date: March 13 2021
 // Solve Time: 6 minutes
 
-function doesBrickFit(bh, bw, bl, hh, hw) {
-    var holeArea = hh * hw;
-    if(bh * bw <= holeArea || bh * bl <= holeArea || bw * bl <= holeArea) {
-        console.log(true)
-    } else {
-        console.log(false)
-    }
-}
+// function doesBrickFit(bh, bw, bl, hh, hw) {
+//     var holeArea = hh * hw;
+//     if(bh * bw <= holeArea || bh * bl <= holeArea || bw * bl <= holeArea) {
+//         console.log(true)
+//     } else {
+//         console.log(false)
+//     }
+// }
 
 
-doesBrickFit(1, 1, 1, 1, 1);
-doesBrickFit(1, 2, 1, 1, 1);
-doesBrickFit(1, 2, 2, 1, 1);
+// doesBrickFit(1, 1, 1, 1, 1);
+// doesBrickFit(1, 2, 1, 1, 1);
+// doesBrickFit(1, 2, 2, 1, 1);
+
+
+
+// Combinations
+// Create a function that takes a variable number of arguments, each argument representing the number of items in a group, and returns the number of permutations (combinations) of items that you could get by taking one item from each group.
+// Difficulty: Hard
+// Date: March 14 2021
+// Solve Time: 
