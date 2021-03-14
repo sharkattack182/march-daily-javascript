@@ -396,4 +396,18 @@
 // Write the function that takes three dimensions of a brick: height(a), width(b) and depth(c) and returns true if this brick can fit into a hole with the width(w) and height(h).
 // Difficulty: Hard
 // Date: March 13 2021
-// Solve Time: 
+// Solve Time: 6 minutes
+
+function doesBrickFit(bh, bw, bl, hh, hw) {
+    var holeArea = hh * hw;
+    if(bh * bw <= holeArea || bh * bl <= holeArea || bw * bl <= holeArea) {
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
+
+
+doesBrickFit(1, 1, 1, 1, 1);
+doesBrickFit(1, 2, 1, 1, 1);
+doesBrickFit(1, 2, 2, 1, 1);
