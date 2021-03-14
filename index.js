@@ -371,20 +371,29 @@
 // Date: March 12 2021
 // Solve Time: 12 minutes
 
-function lcm(num1, num2) {
+// function lcm(num1, num2) {
 
-    let lar = Math.max(num1, num2);
-    let small = Math.min(num1, num2);
+//     let lar = Math.max(num1, num2);
+//     let small = Math.min(num1, num2);
 
-    let i = lar;
-    while(i % small !== 0){
-      i += lar;
-    }
+//     let i = lar;
+//     while(i % small !== 0){
+//       i += lar;
+//     }
     
-    console.log(i)
-}
+//     console.log(i)
+// }
 
 
-lcm(9, 18);
-lcm(8, 5);
-lcm(17, 11);
+// lcm(9, 18);
+// lcm(8, 5);
+// lcm(17, 11);
+
+
+
+
+// Can the Brcik fit through the Hole
+// Write the function that takes three dimensions of a brick: height(a), width(b) and depth(c) and returns true if this brick can fit into a hole with the width(w) and height(h).
+// Difficulty: Hard
+// Date: March 13 2021
+// Solve Time: 
