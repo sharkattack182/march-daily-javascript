@@ -444,4 +444,33 @@
 // Given an array of wine objects, write a function that returns the name of the wine he will buy for the party. If given an empty array, return null. If given an array of only one, Atticus will buy that wine.
 // Difficulty: Hard
 // Date: March 15 2021
-// Solve Time: 
+// Solve Time: 4 minutes
+
+function chosenWine(array) {
+    if(array.length === 0) {
+        console.log(null);
+    }
+
+    else if(array.length === 1) {
+        console.log(array[0].name)
+    }
+
+    else {
+        var sorted = array.sort(function(a,b) {
+            return a.price - b.price
+        })
+
+        console.log(sorted[1].name)
+    }
+}
+
+
+chosenWine([
+    { name: "Wine A", price: 8.99 },
+    { name: "Wine 32", price: 13.99 },
+    { name: "Wine 9", price: 10.99 }
+  ]);
+
+  chosenWine([{ name: "Wine A", price: 8.99 }]);
+  
+  chosenWine([]);
