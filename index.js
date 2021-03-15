@@ -421,16 +421,27 @@
 // Solve Time: 4 minutes
 
 
-function combinations(...nums) {
-    let total = nums[0];
-    for (let i = 1; i < nums.length; i++) {
-        const number = nums[i];
-        total = total * number;
-    }
-    console.log(total)
-}
+// function combinations(...nums) {
+//     let total = nums[0];
+//     for (let i = 1; i < nums.length; i++) {
+//         const number = nums[i];
+//         total = total * number;
+//     }
+//     console.log(total)
+// }
 
 
-combinations(2, 3);
-combinations(3, 7, 4);
-combinations(2, 3, 4, 5);
+// combinations(2, 3);
+// combinations(3, 7, 4);
+// combinations(2, 3, 4, 5);
+
+
+
+
+// The Frugal Gentleman
+// Atticus has been invited to a dinner party, and he decides to purchase a bottle of wine. However, he has little knowledge of how to choose a good bottle. Being a very frugal gentleman (yet disliking looking like a cheapskate), he decides to use a very simple rule. In any selection of two or more wines, he will always buy the second-cheapest.
+
+// Given an array of wine objects, write a function that returns the name of the wine he will buy for the party. If given an empty array, return null. If given an array of only one, Atticus will buy that wine.
+// Difficulty: Hard
+// Date: March 15 2021
+// Solve Time: 
