@@ -482,4 +482,44 @@
 // Create a function that takes an array of objects (groceries) which calculates the total price and returns it as a number. A grocery object has a product, a quantity and a price, for example:
 // Difficulty: Hard
 // Date: March 16 2021
-// Solve Time: 
+// Solve Time: 4 minutes
+
+function getTotalPrice(array) {
+    var total = 0;
+    array.forEach(product => {
+        var cost = product.quantity * product.price;
+        total += cost
+    });
+    console.log(total.toFixed(2))
+}
+
+
+// 1 bottle of milk:
+getTotalPrice([
+    { product: "Milk", quantity: 1, price: 1.50 }
+  ]);
+  
+  // 1 bottle of milk & 1 box of cereals:
+  getTotalPrice([
+    { product: "Milk", quantity: 1, price: 1.50 },
+    { product: "Cereals", quantity: 1, price: 2.50 }
+  ]);
+  
+  // 3 bottles of milk:
+  getTotalPrice([
+    { product: "Milk", quantity: 3, price: 1.50 }
+  ]);
+  
+  // Several groceries:
+  getTotalPrice([
+    { product: "Milk", quantity: 1, price: 1.50 },
+    { product: "Eggs", quantity: 12, price: 0.10 },
+    { product: "Bread", quantity: 2, price: 1.60 },
+    { product: "Cheese", quantity: 1, price: 4.50 }
+  ]);
+  
+  // Some cheap candy:
+  getTotalPrice([
+    { product: "Chocolate", quantity: 1, price: 0.10 },
+    { product: "Lollipop", quantity: 1, price: 0.20 }
+  ]);
