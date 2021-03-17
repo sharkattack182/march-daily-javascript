@@ -446,31 +446,40 @@
 // Date: March 15 2021
 // Solve Time: 4 minutes
 
-function chosenWine(array) {
-    if(array.length === 0) {
-        console.log(null);
-    }
+// function chosenWine(array) {
+//     if(array.length === 0) {
+//         console.log(null);
+//     }
 
-    else if(array.length === 1) {
-        console.log(array[0].name)
-    }
+//     else if(array.length === 1) {
+//         console.log(array[0].name)
+//     }
 
-    else {
-        var sorted = array.sort(function(a,b) {
-            return a.price - b.price
-        })
+//     else {
+//         var sorted = array.sort(function(a,b) {
+//             return a.price - b.price
+//         })
 
-        console.log(sorted[1].name)
-    }
-}
+//         console.log(sorted[1].name)
+//     }
+// }
 
 
-chosenWine([
-    { name: "Wine A", price: 8.99 },
-    { name: "Wine 32", price: 13.99 },
-    { name: "Wine 9", price: 10.99 }
-  ]);
+// chosenWine([
+//     { name: "Wine A", price: 8.99 },
+//     { name: "Wine 32", price: 13.99 },
+//     { name: "Wine 9", price: 10.99 }
+//   ]);
 
-  chosenWine([{ name: "Wine A", price: 8.99 }]);
+//   chosenWine([{ name: "Wine A", price: 8.99 }]);
   
-  chosenWine([]);
+//   chosenWine([]);
+
+
+
+
+// Calculate the Total Price of Groceries
+// Create a function that takes an array of objects (groceries) which calculates the total price and returns it as a number. A grocery object has a product, a quantity and a price, for example:
+// Difficulty: Hard
+// Date: March 16 2021
+// Solve Time: 
