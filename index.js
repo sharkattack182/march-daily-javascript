@@ -533,5 +533,24 @@
 // Date: March 17 2021
 // Solve Time: 
 
+function numInStr(array) {
 
+  const newArr = [];
 
+  const regex = /\d/g;
+
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    if(regex.test(element)) {
+      newArr.push(element);
+    }
+
+ 
+}
+ console.log(newArr)
+}
+
+numInStr(["1a", "a", "2b", "b"]);
+numInStr(["abc", "abc10"]);
+numInStr(["abc", "ab10c", "a10bc", "bcd"]);
+numInStr(["this is a test", "test1"]);
