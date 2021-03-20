@@ -531,26 +531,38 @@
 // Create a function that takes an array of strings and returns an array with only the strings that have numbers in them. If there are no strings containing numbers, return an empty array.
 // Difficulty: Hard
 // Date: March 17 2021
-// Solve Time: 
+// Solve Time: 7 minutes
 
-function numInStr(array) {
+// function numInStr(array) {
 
-  const newArr = [];
+//   const newArr = [];
 
-  const regex = /\d/g;
+//   const regex = /\d/g;
 
-  for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    if(regex.test(element)) {
-      newArr.push(element);
-    }
+//   for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+//     if(regex.test(element)) {
+//       newArr.push(element);
+//     }
 
  
-}
- console.log(newArr)
-}
+// }
+//  console.log(newArr)
+// }
 
-numInStr(["1a", "a", "2b", "b"]);
-numInStr(["abc", "abc10"]);
-numInStr(["abc", "ab10c", "a10bc", "bcd"]);
-numInStr(["this is a test", "test1"]);
+// numInStr(["1a", "a", "2b", "b"]);
+// numInStr(["abc", "abc10"]);
+// numInStr(["abc", "ab10c", "a10bc", "bcd"]);
+// numInStr(["this is a test", "test1"]);
+
+
+
+// Star Ratings
+// Given an array of five values, calculate the average star rating, rounded to two decimal places. The array contains user votes per star, so the first element [0] contains the number of 1-star ratings and the last element [4], the number of 5-star ratings.
+
+// Return the average score in [brackets], followed by a space and asterisks' * to represent the star rating, rounded to the nearest whole star.
+
+
+// Difficulty: Hard
+// Date: March 18 2021
+// Solve Time: 
