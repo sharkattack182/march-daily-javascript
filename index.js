@@ -567,14 +567,14 @@
 // Date: March 18 2021
 // Solve Time: 
 
-function starRating(arr) {
-  let rate = (arr.reduce((acc, cur, i) => acc + cur * (i + 1), 0) / arr.reduce((acc, cur, i) => acc + cur, 0)).toFixed(2)
-	console.log(`[${rate}] ${'*'.repeat(Math.round(rate))}`)
-}
+// function starRating(arr) {
+//   let rate = (arr.reduce((acc, cur, i) => acc + cur * (i + 1), 0) / arr.reduce((acc, cur, i) => acc + cur, 0)).toFixed(2)
+// 	console.log(`[${rate}] ${'*'.repeat(Math.round(rate))}`)
+// }
 
-starRating([55, 67, 98, 115, 61]);
-starRating([0, 2, 0, 1, 23]);
-starRating([16, 17, 23, 40, 45]);
+// starRating([55, 67, 98, 115, 61]);
+// starRating([0, 2, 0, 1, 23]);
+// starRating([16, 17, 23, 40, 45]);
 
 
 
@@ -582,4 +582,26 @@ starRating([16, 17, 23, 40, 45]);
 // Write a function to replace all instances of character c1 with character c2 and vice versa.
 // Difficulty: Hard
 // Date: March 19 2021
-// Solve Time: 
+// Solve Time: 9 min
+
+function doubleSwap(string, c1, c2) {
+  var arr = string.split("");
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    if(element === c1) {
+      newArr.push(c2);
+    } else if(element === c2) {
+      newArr.push(c1)
+    } else {
+      newArr.push(element)
+    }
+  }
+
+  console.log(newArr.join(""))
+}
+
+
+doubleSwap( "aabbccc", "a", "b");
+doubleSwap("random w#rds writt&n h&r&", "#", "&");
+doubleSwap("128 895 556 788 999", "8", "9");
