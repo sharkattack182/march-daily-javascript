@@ -612,4 +612,24 @@
 // Write a function that inserts a white space between every instance of a lower character followed immediately by an upper character.
 // Difficulty: Hard
 // Date: March 20 2021
-// Solve Time: 
+// Solve Time: 10 minutes
+
+function insertWhitespace(string) {
+  var array = string.split("");
+  var newArr = []
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    if(element === element.toUpperCase()) {
+      newArr.push(" " + element);
+    } else {
+      newArr.push(element)
+    }
+  }
+
+  console.log(newArr.join(""))
+}
+
+
+insertWhitespace("SheWalksToTheBeach");
+insertWhitespace("MarvinTalksTooMuch");
+insertWhitespace("TheGreatestUpsetInHistory");
