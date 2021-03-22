@@ -566,3 +566,12 @@
 // Difficulty: Hard
 // Date: March 18 2021
 // Solve Time: 
+
+function starRating(arr) {
+  let rate = (arr.reduce((acc, cur, i) => acc + cur * (i + 1), 0) / arr.reduce((acc, cur, i) => acc + cur, 0)).toFixed(2)
+	console.log(`[${rate}] ${'*'.repeat(Math.round(rate))}`)
+}
+
+starRating([55, 67, 98, 115, 61]);
+starRating([0, 2, 0, 1, 23]);
+starRating([16, 17, 23, 40, 45]);
