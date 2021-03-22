@@ -584,24 +584,32 @@
 // Date: March 19 2021
 // Solve Time: 9 min
 
-function doubleSwap(string, c1, c2) {
-  var arr = string.split("");
-  let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    const element = arr[i];
-    if(element === c1) {
-      newArr.push(c2);
-    } else if(element === c2) {
-      newArr.push(c1)
-    } else {
-      newArr.push(element)
-    }
-  }
+// function doubleSwap(string, c1, c2) {
+//   var arr = string.split("");
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     const element = arr[i];
+//     if(element === c1) {
+//       newArr.push(c2);
+//     } else if(element === c2) {
+//       newArr.push(c1)
+//     } else {
+//       newArr.push(element)
+//     }
+//   }
 
-  console.log(newArr.join(""))
-}
+//   console.log(newArr.join(""))
+// }
 
 
-doubleSwap( "aabbccc", "a", "b");
-doubleSwap("random w#rds writt&n h&r&", "#", "&");
-doubleSwap("128 895 556 788 999", "8", "9");
+// doubleSwap( "aabbccc", "a", "b");
+// doubleSwap("random w#rds writt&n h&r&", "#", "&");
+// doubleSwap("128 895 556 788 999", "8", "9");
+
+
+
+// White Spaces Between Lower and Uppercase Letters
+// Write a function that inserts a white space between every instance of a lower character followed immediately by an upper character.
+// Difficulty: Hard
+// Date: March 20 2021
+// Solve Time: 
