@@ -575,3 +575,11 @@ function starRating(arr) {
 starRating([55, 67, 98, 115, 61]);
 starRating([0, 2, 0, 1, 23]);
 starRating([16, 17, 23, 40, 45]);
+
+
+
+// Double Character Swap
+// Write a function to replace all instances of character c1 with character c2 and vice versa.
+// Difficulty: Hard
+// Date: March 19 2021
+// Solve Time: 
