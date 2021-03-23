@@ -640,4 +640,42 @@
 // Create a function that takes an array with temperature type, temperature, and a second temperature type. The temperature types can be Celsius, Fahrenheit, or Kelvin. Return the temperature type (in the array) converted into the second temperature type.
 // Difficulty: Hard
 // Date: March 21 2021
-// Solve Time: 
+// Solve Time: 14 minutes
+
+function converter(array, newTempType) {
+  var tempType = array[0];
+  var temp = array[1];
+
+  var newTemp;
+
+  switch(tempType) {
+    case "fahrenheit":
+      if(newTempType === "kelvin") {
+        newTemp = (temp - 32) * 5 / 9 + 273.15;
+      } else if(newTempType === "celsius") {
+        newTemp = (temp - 32) * 5 / 9;
+      }
+      break;
+    case "celsius": 
+      if(newTempType === "kelvin") {
+        newTemp = temp + 273.15;
+      } else if(newTempType === "fahrenheit") {
+        newTemp = (temp * 9 / 5) + 32;
+      }
+      break;
+    case "kelvin":
+      if(newTempType === "celsius") {
+        newTemp = temp - 273.15;
+      } else if(newTempType === "fahrenheit") {
+        newTemp = (temp - 273.15) * 9 / 5 + 32;
+      }
+      break;
+  }
+
+   console.log(newTemp.toFixed(1))
+}
+
+
+converter(["fahrenheit", 3] , "kelvin");
+converter(["celsius", 10] , "fahrenheit");
+converter(["celsius", 20] , "kelvin");
