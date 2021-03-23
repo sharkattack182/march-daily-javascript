@@ -686,4 +686,18 @@
 // Create a function which returns how many Friday 13ths there are in a given year.
 // Difficulty: Hard
 // Date: March 22 2021
-// Solve Time: 
+// Solve Time: 2 minutes
+
+function howUnlucky(year) {
+  count = 0;
+  for (let i = 0; i < 12; i++) {
+    if(new Date(year, i , 13).getDay()==5) count++;
+    
+  }
+  console.log(count)
+}
+
+
+howUnlucky(2020);
+howUnlucky(2026);
+howUnlucky(2016);
