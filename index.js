@@ -614,22 +614,30 @@
 // Date: March 20 2021
 // Solve Time: 10 minutes
 
-function insertWhitespace(string) {
-  var array = string.split("");
-  var newArr = []
-  for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    if(element === element.toUpperCase()) {
-      newArr.push(" " + element);
-    } else {
-      newArr.push(element)
-    }
-  }
+// function insertWhitespace(string) {
+//   var array = string.split("");
+//   var newArr = []
+//   for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+//     if(element === element.toUpperCase()) {
+//       newArr.push(" " + element);
+//     } else {
+//       newArr.push(element)
+//     }
+//   }
 
-  console.log(newArr.join(""))
-}
+//   console.log(newArr.join(""))
+// }
 
 
-insertWhitespace("SheWalksToTheBeach");
-insertWhitespace("MarvinTalksTooMuch");
-insertWhitespace("TheGreatestUpsetInHistory");
+// insertWhitespace("SheWalksToTheBeach");
+// insertWhitespace("MarvinTalksTooMuch");
+// insertWhitespace("TheGreatestUpsetInHistory");
+
+
+
+// Temperature Converter
+// Create a function that takes an array with temperature type, temperature, and a second temperature type. The temperature types can be Celsius, Fahrenheit, or Kelvin. Return the temperature type (in the array) converted into the second temperature type.
+// Difficulty: Hard
+// Date: March 21 2021
+// Solve Time: 
