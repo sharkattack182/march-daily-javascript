@@ -642,40 +642,48 @@
 // Date: March 21 2021
 // Solve Time: 14 minutes
 
-function converter(array, newTempType) {
-  var tempType = array[0];
-  var temp = array[1];
+// function converter(array, newTempType) {
+//   var tempType = array[0];
+//   var temp = array[1];
 
-  var newTemp;
+//   var newTemp;
 
-  switch(tempType) {
-    case "fahrenheit":
-      if(newTempType === "kelvin") {
-        newTemp = (temp - 32) * 5 / 9 + 273.15;
-      } else if(newTempType === "celsius") {
-        newTemp = (temp - 32) * 5 / 9;
-      }
-      break;
-    case "celsius": 
-      if(newTempType === "kelvin") {
-        newTemp = temp + 273.15;
-      } else if(newTempType === "fahrenheit") {
-        newTemp = (temp * 9 / 5) + 32;
-      }
-      break;
-    case "kelvin":
-      if(newTempType === "celsius") {
-        newTemp = temp - 273.15;
-      } else if(newTempType === "fahrenheit") {
-        newTemp = (temp - 273.15) * 9 / 5 + 32;
-      }
-      break;
-  }
+//   switch(tempType) {
+//     case "fahrenheit":
+//       if(newTempType === "kelvin") {
+//         newTemp = (temp - 32) * 5 / 9 + 273.15;
+//       } else if(newTempType === "celsius") {
+//         newTemp = (temp - 32) * 5 / 9;
+//       }
+//       break;
+//     case "celsius": 
+//       if(newTempType === "kelvin") {
+//         newTemp = temp + 273.15;
+//       } else if(newTempType === "fahrenheit") {
+//         newTemp = (temp * 9 / 5) + 32;
+//       }
+//       break;
+//     case "kelvin":
+//       if(newTempType === "celsius") {
+//         newTemp = temp - 273.15;
+//       } else if(newTempType === "fahrenheit") {
+//         newTemp = (temp - 273.15) * 9 / 5 + 32;
+//       }
+//       break;
+//   }
 
-   console.log(newTemp.toFixed(1))
-}
+//    console.log(newTemp.toFixed(1))
+// }
 
 
-converter(["fahrenheit", 3] , "kelvin");
-converter(["celsius", 10] , "fahrenheit");
-converter(["celsius", 20] , "kelvin");
+// converter(["fahrenheit", 3] , "kelvin");
+// converter(["celsius", 10] , "fahrenheit");
+// converter(["celsius", 20] , "kelvin");
+
+
+
+// Unlucky Years
+// Create a function which returns how many Friday 13ths there are in a given year.
+// Difficulty: Hard
+// Date: March 22 2021
+// Solve Time: 
