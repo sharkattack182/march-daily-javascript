@@ -707,6 +707,40 @@
 
 // Does the Cargo Fit?
 // A ship has to transport cargo from one place to another, while picking up cargo along the way. Given the total amount of cargo and the types of cargo holds in the ship as arrays, create a function that returns true if all the cargo can fit on the ship, and false if it can't.
+// "S" means 50 cargo space.
+// "M" means 100 cargo space.
+// "L" means 200 cargo space.
 // Difficulty: Hard
 // Date: March 23 2021
-// Solve Time: 
+// Solve Time: 10 min
+
+function willFit(cargoSpace, cargoArea) {
+  let S = 50;
+  let M = 100;
+  let L = 200;
+
+  var spaceNeeded = cargoArea.reduce((a,b) => a + b, 0);
+ 
+  var spaceAvailable = 0;
+
+  cargoSpace.forEach(cargoHold => {
+    if(cargoHold === "S") {
+      spaceAvailable += 50;
+    } else if(cargoHold === "M") {
+      spaceAvailable += 100;
+    } else if (cargoHold === "L") {
+      spaceAvailable += 200;
+    }
+  });
+
+  if(spaceAvailable > spaceNeeded) {
+    console.log("true");
+  } else {
+    console.log("false")
+  }
+}
+
+
+willFit(["M", "L", "L", "M"], [56, 62, 84, 90]);
+willFit(["S", "S", "S", "S", "L"], [40, 50, 60, 70 , 80, 90, 200]);
+willFit(["L", "L", "M"], [56, 62, 84, 90]);
