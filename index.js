@@ -714,33 +714,42 @@
 // Date: March 23 2021
 // Solve Time: 10 min
 
-function willFit(cargoSpace, cargoArea) {
-  let S = 50;
-  let M = 100;
-  let L = 200;
+// function willFit(cargoSpace, cargoArea) {
+//   let S = 50;
+//   let M = 100;
+//   let L = 200;
 
-  var spaceNeeded = cargoArea.reduce((a,b) => a + b, 0);
+//   var spaceNeeded = cargoArea.reduce((a,b) => a + b, 0);
  
-  var spaceAvailable = 0;
+//   var spaceAvailable = 0;
 
-  cargoSpace.forEach(cargoHold => {
-    if(cargoHold === "S") {
-      spaceAvailable += 50;
-    } else if(cargoHold === "M") {
-      spaceAvailable += 100;
-    } else if (cargoHold === "L") {
-      spaceAvailable += 200;
-    }
-  });
+//   cargoSpace.forEach(cargoHold => {
+//     if(cargoHold === "S") {
+//       spaceAvailable += 50;
+//     } else if(cargoHold === "M") {
+//       spaceAvailable += 100;
+//     } else if (cargoHold === "L") {
+//       spaceAvailable += 200;
+//     }
+//   });
 
-  if(spaceAvailable > spaceNeeded) {
-    console.log("true");
-  } else {
-    console.log("false")
-  }
-}
+//   if(spaceAvailable > spaceNeeded) {
+//     console.log("true");
+//   } else {
+//     console.log("false")
+//   }
+// }
 
 
-willFit(["M", "L", "L", "M"], [56, 62, 84, 90]);
-willFit(["S", "S", "S", "S", "L"], [40, 50, 60, 70 , 80, 90, 200]);
-willFit(["L", "L", "M"], [56, 62, 84, 90]);
+// willFit(["M", "L", "L", "M"], [56, 62, 84, 90]);
+// willFit(["S", "S", "S", "S", "L"], [40, 50, 60, 70 , 80, 90, 200]);
+// willFit(["L", "L", "M"], [56, 62, 84, 90]);
+
+
+
+
+// Cup Swapping
+// There are three cups on a table, at positions A, B, and C. At the start, there is a ball hidden under the cup at position B.
+// Difficulty: Hard
+// Date: March 24 2021
+// Solve Time: 
