@@ -752,4 +752,24 @@
 // There are three cups on a table, at positions A, B, and C. At the start, there is a ball hidden under the cup at position B.
 // Difficulty: Hard
 // Date: March 24 2021
-// Solve Time: 
+// Solve Time: 20 minutes
+
+function cupSwapping(movements) {
+  let position = "B";
+
+ for (let i = 0; i < movements.length; i++) {
+   const swap = movements[i];
+   if(swap.includes(position)) {
+     position = swap.replace(position, "")
+   }
+ }
+
+ console.log(position)
+}
+
+
+cupSwapping(["AB", "CA"]);
+
+cupSwapping(["AC", "CA", "CA", "AC"]);
+
+cupSwapping(["BA", "AC", "CA", "BC"]);
