@@ -688,16 +688,25 @@
 // Date: March 22 2021
 // Solve Time: 2 minutes
 
-function howUnlucky(year) {
-  count = 0;
-  for (let i = 0; i < 12; i++) {
-    if(new Date(year, i , 13).getDay()==5) count++;
+// function howUnlucky(year) {
+//   count = 0;
+//   for (let i = 0; i < 12; i++) {
+//     if(new Date(year, i , 13).getDay()==5) count++;
     
-  }
-  console.log(count)
-}
+//   }
+//   console.log(count)
+// }
 
 
-howUnlucky(2020);
-howUnlucky(2026);
-howUnlucky(2016);
+// howUnlucky(2020);
+// howUnlucky(2026);
+// howUnlucky(2016);
+
+
+
+
+// Does the Cargo Fit?
+// A ship has to transport cargo from one place to another, while picking up cargo along the way. Given the total amount of cargo and the types of cargo holds in the ship as arrays, create a function that returns true if all the cargo can fit on the ship, and false if it can't.
+// Difficulty: Hard
+// Date: March 23 2021
+// Solve Time: 
