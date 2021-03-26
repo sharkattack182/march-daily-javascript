@@ -754,22 +754,31 @@
 // Date: March 24 2021
 // Solve Time: 20 minutes
 
-function cupSwapping(movements) {
-  let position = "B";
+// function cupSwapping(movements) {
+//   let position = "B";
 
- for (let i = 0; i < movements.length; i++) {
-   const swap = movements[i];
-   if(swap.includes(position)) {
-     position = swap.replace(position, "")
-   }
- }
+//  for (let i = 0; i < movements.length; i++) {
+//    const swap = movements[i];
+//    if(swap.includes(position)) {
+//      position = swap.replace(position, "")
+//    }
+//  }
 
- console.log(position)
-}
+//  console.log(position)
+// }
 
 
-cupSwapping(["AB", "CA"]);
+// cupSwapping(["AB", "CA"]);
 
-cupSwapping(["AC", "CA", "CA", "AC"]);
+// cupSwapping(["AC", "CA", "CA", "AC"]);
 
-cupSwapping(["BA", "AC", "CA", "BC"]);
+// cupSwapping(["BA", "AC", "CA", "BC"]);
+
+
+
+
+// Sum of Slices of an Array
+// Create a function that takes an array as an argument and return an array of the sum of each of its slices. An array's slices are groups of consecutive values that add up to a maximum of 100. No slice's total sum should exceed 100. However, if a single integer equals or exceeds 100, return the integer as well.
+// Difficulty: Hard
+// Date: March 25 2021
+// Solve Time: 
