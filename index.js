@@ -781,4 +781,23 @@
 // Create a function that takes an array as an argument and return an array of the sum of each of its slices. An array's slices are groups of consecutive values that add up to a maximum of 100. No slice's total sum should exceed 100. However, if a single integer equals or exceeds 100, return the integer as well.
 // Difficulty: Hard
 // Date: March 25 2021
-// Solve Time: 
+// Solve Time: 20 minutes
+
+function sumOfSlices(arr) {
+	let sum = 0; 
+  ret = [];
+	for(let i = 0; i < arr.length; i++){
+		if(sum + arr[i] < 100) 
+			sum += arr[i];
+		else{
+			ret.push(sum);
+			sum = arr[i];
+		}
+	}
+	console.log(ret.concat(sum)) ;
+
+}
+
+sumOfSlices([58, 3, 38, 99, 10]);
+
+sumOfSlices([13]);
