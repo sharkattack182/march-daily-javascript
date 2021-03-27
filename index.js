@@ -807,4 +807,17 @@
 // Write a function that splits a string into substrings of size n, adding a specified delimiter between each of the pieces.
 // Difficulty: Hard
 // Date: March 27 2021
-// Solve Time: 
+// Solve Time: 10 minutes
+
+function splitAndDelimit(string, num, addChar) {
+  var returnArr = [];
+
+  for (let i = 0; i < string.length; i += num) {
+    returnArr.push(string.substring(i, i+num))
+  }
+  console.log(returnArr.join(addChar))
+}
+
+splitAndDelimit("bellow", 2, "&");
+splitAndDelimit("magnify", 3, ":");
+splitAndDelimit("poisonous", 2, "~");
