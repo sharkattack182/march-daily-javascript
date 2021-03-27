@@ -783,21 +783,28 @@
 // Date: March 25 2021
 // Solve Time: 20 minutes
 
-function sumOfSlices(arr) {
-	let sum = 0; 
-  ret = [];
-	for(let i = 0; i < arr.length; i++){
-		if(sum + arr[i] < 100) 
-			sum += arr[i];
-		else{
-			ret.push(sum);
-			sum = arr[i];
-		}
-	}
-	console.log(ret.concat(sum)) ;
+// function sumOfSlices(arr) {
+// 	let sum = 0; 
+//   ret = [];
+// 	for(let i = 0; i < arr.length; i++){
+// 		if(sum + arr[i] < 100) 
+// 			sum += arr[i];
+// 		else{
+// 			ret.push(sum);
+// 			sum = arr[i];
+// 		}
+// 	}
+// 	console.log(ret.concat(sum)) ;
 
-}
+// }
 
-sumOfSlices([58, 3, 38, 99, 10]);
+// sumOfSlices([58, 3, 38, 99, 10]);
 
-sumOfSlices([13]);
+// sumOfSlices([13]);
+
+
+// Split and Delimit
+// Write a function that splits a string into substrings of size n, adding a specified delimiter between each of the pieces.
+// Difficulty: Hard
+// Date: March 27 2021
+// Solve Time: 
