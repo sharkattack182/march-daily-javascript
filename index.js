@@ -809,15 +809,22 @@
 // Date: March 27 2021
 // Solve Time: 10 minutes
 
-function splitAndDelimit(string, num, addChar) {
-  var returnArr = [];
+// function splitAndDelimit(string, num, addChar) {
+//   var returnArr = [];
 
-  for (let i = 0; i < string.length; i += num) {
-    returnArr.push(string.substring(i, i+num))
-  }
-  console.log(returnArr.join(addChar))
-}
+//   for (let i = 0; i < string.length; i += num) {
+//     returnArr.push(string.substring(i, i+num))
+//   }
+//   console.log(returnArr.join(addChar))
+// }
 
-splitAndDelimit("bellow", 2, "&");
-splitAndDelimit("magnify", 3, ":");
-splitAndDelimit("poisonous", 2, "~");
+// splitAndDelimit("bellow", 2, "&");
+// splitAndDelimit("magnify", 3, ":");
+// splitAndDelimit("poisonous", 2, "~");
+
+
+// Basic Arithmetic Operations on a String Number
+// Create a function to perform basic arithmetic operations that includes addition, subtraction, multiplication and division on a string number (e.g. "12 + 24" or "23 - 21" or "12 / 12" or "12 * 21").
+// Difficulty: Hard
+// Date: March 28 2021
+// Solve Time: 
