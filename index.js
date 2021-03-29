@@ -829,46 +829,55 @@
 // Date: March 28 2021
 // Solve Time: 8 minutes
 
-function arithmeticOperation(string) {
-  var array = string.split(" ");
+// function arithmeticOperation(string) {
+//   var array = string.split(" ");
 
-  var num1 = parseInt(array[0]);
-  if(array[2] === "0") {
-    console.log(-1);
-  } else {
+//   var num1 = parseInt(array[0]);
+//   if(array[2] === "0") {
+//     console.log(-1);
+//   } else {
 
   
-  var num2 = parseInt(array[2]);
-  var operator = array[1];
-  var total = 0
+//   var num2 = parseInt(array[2]);
+//   var operator = array[1];
+//   var total = 0
 
-      switch(operator) {
-    case "+": 
-    total = num1 + num2;
-    break;
+//       switch(operator) {
+//     case "+": 
+//     total = num1 + num2;
+//     break;
     
-    case "/": 
-    total = num1 / num2;
-    break;
+//     case "/": 
+//     total = num1 / num2;
+//     break;
 
-    case "-": 
-    total = num1 - num2;
-    break;
+//     case "-": 
+//     total = num1 - num2;
+//     break;
 
-    case "*": 
-    total = num1 * num2;
-    break;
-  }
+//     case "*": 
+//     total = num1 * num2;
+//     break;
+//   }
 
-console.log(total)
+// console.log(total)
 
-}
+// }
   
-}
+// }
 
 
 
-arithmeticOperation("12 + 12");
-arithmeticOperation("12 - 12");
-arithmeticOperation("12 * 12");
-arithmeticOperation("12 / 0");
+// arithmeticOperation("12 + 12");
+// arithmeticOperation("12 - 12");
+// arithmeticOperation("12 * 12");
+// arithmeticOperation("12 / 0");
+
+
+
+// Coins Combinations
+// Given an amount of money and an array of coins denominations, create a function that counts how many different ways you can make change with the given money.
+// Difficulty: Hard
+// Date: March 29 2021
+// Solve Time: 
+
