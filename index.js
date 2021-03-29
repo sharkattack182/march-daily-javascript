@@ -879,5 +879,29 @@
 // Given an amount of money and an array of coins denominations, create a function that counts how many different ways you can make change with the given money.
 // Difficulty: Hard
 // Date: March 29 2021
-// Solve Time: 
+// Solve Time: 12 minutes
 
+function coinsCombinations(money, coins) {
+
+  let combinations = [];
+  
+  function backtracking(temp,sum,start){
+     if (sum > money) return;
+     if (sum === money) combinations.push([...temp]);
+     for(let i = start; i<coins.length; i++){
+           temp.push(coins[i]);
+           backtracking(temp,sum+coins[i],i);
+           temp.pop();
+     }
+    
+  }
+  
+  backtracking([],0,0);
+  
+
+  console.log(combinations.length);
+}
+
+coinsCombinations(4, [1, 2]);
+coinsCombinations(10, [5, 2, 3]);
+coinsCombinations(11, [5, 7]);
