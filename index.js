@@ -881,27 +881,34 @@
 // Date: March 29 2021
 // Solve Time: 12 minutes
 
-function coinsCombinations(money, coins) {
+// function coinsCombinations(money, coins) {
 
-  let combinations = [];
+//   let combinations = [];
   
-  function backtracking(temp,sum,start){
-     if (sum > money) return;
-     if (sum === money) combinations.push([...temp]);
-     for(let i = start; i<coins.length; i++){
-           temp.push(coins[i]);
-           backtracking(temp,sum+coins[i],i);
-           temp.pop();
-     }
+//   function backtracking(temp,sum,start){
+//      if (sum > money) return;
+//      if (sum === money) combinations.push([...temp]);
+//      for(let i = start; i<coins.length; i++){
+//            temp.push(coins[i]);
+//            backtracking(temp,sum+coins[i],i);
+//            temp.pop();
+//      }
     
-  }
+//   }
   
-  backtracking([],0,0);
+//   backtracking([],0,0);
   
 
-  console.log(combinations.length);
-}
+//   console.log(combinations.length);
+// }
 
-coinsCombinations(4, [1, 2]);
-coinsCombinations(10, [5, 2, 3]);
-coinsCombinations(11, [5, 7]);
+// coinsCombinations(4, [1, 2]);
+// coinsCombinations(10, [5, 2, 3]);
+// coinsCombinations(11, [5, 7]);
+
+
+// How Many Days Between Two Dates
+// Create a function that takes two dates and returns the number of days between the first and second date.
+// Difficulty: Hard
+// Date: March 30 2021
+// Solve Time: 
