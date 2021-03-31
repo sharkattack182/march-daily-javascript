@@ -942,4 +942,29 @@
 // Create a function that converts a string into a matrix of characters that can be read vertically. Add spaces when characters are missing.
 // Difficulty: Hard
 // Date: March 31 2021
-// Solve Time:
+// Solve Time: 19 minutes
+
+function verticalText(string) {
+  var twoStringz = string.split(" ");
+  var arr1 = twoStringz[0].split("");
+  var arr2 = twoStringz[1].split("");
+
+  var response = []
+
+    for (let i = 0; i < arr2.length; i++) {
+      let newArr = [];
+    
+      if(arr1[i] === undefined) {
+        newArr.push(" ", arr2[i])
+      } else {
+        newArr.push(arr1[i], arr2[i]);
+      }
+      
+      response.push(newArr);
+  }
+
+  console.log(response)
+}
+
+verticalText("Holy bananas");
+verticalText("Hello fellas");
